@@ -1,0 +1,4 @@
+=== Automatically trigger an automation task on a Nuage Networks VSP event or alarm
+
+#
+

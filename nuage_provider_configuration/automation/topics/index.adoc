@@ -1,0 +1,6 @@
+== Using the Nuage Networks events and alarms for automation
+
+include::creating_automation_task.adoc[]
+
+include::trigger_automation_task.adoc[]
+

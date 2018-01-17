@@ -1,0 +1,9 @@
+== Using OpenStack to manage Nuage Networks VSP networks from Red Hat CloudForms
+
+While the Nuage Networks provider currently does not allow the management of Nuage Network VSP resources, the Nuage Networks VSP integration with OpenStack can be leveraged through the OpenStack provider for Red Hat CloudForms. Using the OpenStack provider for Red Hat CloudForms, it is possible to manage the networks, security groups, policies, and much more in OpenStack. The Nuage Networks VSP plugin for OpenStack will then manage these resources in the Nuage Networks VSP environment. 
+
+.Nuage Networks VSP and OpenStack interaction with Red Hat CloudForms
+image::openstack/images/nuage-openstack-manageiq-integration.png[]
+
+Any changes made using the OpenStack provider to the networks or the security groups will automatically be reflected in the Nuage Networks provider.
+

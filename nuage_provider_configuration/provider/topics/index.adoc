@@ -1,0 +1,10 @@
+== Managing the Nuage Networks provider
+
+include::adding_provider.adoc[]
+
+include::refreshing_provider.adoc[]
+
+include::editing_provider.adoc[]
+
+include::removing_provider.adoc[]
+

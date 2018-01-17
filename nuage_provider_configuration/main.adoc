@@ -1,0 +1,21 @@
+:numbered:
+
+= Configuring the Nuage Networks Provider for Red Hat CloudForms
+Nuage Networks <info@nuagenetworks.net>
+version 0.0, {localdate}
+:toc:
+
+include::overview/topics/index.adoc[]
+
+include::configuration/topics/index.adoc[]
+
+include::provider/topics/index.adoc[]
+
+include::inspect/topics/index.adoc[]
+
+include::automation/topics/index.adoc[]
+
+include::openstack/topics/index.adoc[]
+
+include::troubleshooting/topics/index.adoc[]
+

@@ -1,0 +1,10 @@
+== Using the Nuage Networks provider to inspect elements
+
+include::view_networks.adoc[]
+
+include::view_security_groups.adoc[]
+
+include::view_openstack_relation.adoc[]
+
+include::view_events_alarms.adoc[]
+ 

@@ -1,0 +1,8 @@
+=== Connectivity Requirements
+
+For the successful integration of the Nuage Networks Provider, you will need to make sure that there is proper network connectivity between the Red Hat CloudForms nodes and the Nuage VSD nodes. 
+
+For the basic functionality of monitoring the networks and security groups that are present in the Nuage Networks VSP environment, connectivity can either be provided to a single VSD node to port 8443, or using the load-balancer which is deployed in front of a VSD cluster environment, in which case the port advertised by the load-balancer should be used when configuring the Nuage Networks Provider. 
+
+For the events and alarms monitoring functionality, the Red Hat CloudForms nodes will need connectivity to port 5672 on each VSD node of the Nuage Networks VSP environment.
+
