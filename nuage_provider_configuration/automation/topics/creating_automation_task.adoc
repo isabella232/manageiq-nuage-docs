@@ -1,4 +1,118 @@
-=== Creating an automation task
+=== Creating an example automation workflow
 
-# 
+In the following section we will setup an automation task that will log the events for all the Nuage Networks VSP events that do not have a specific workflow available.
+
+==== Creating the Automate Class
+
+We will start by setting up a new Automate Class with its own Method and Instance.
+
+. Go to *Automation > Automate > Explorer*.
+
+. Select *Datastore*.
+
+. (Optional) If you do not have an *Automate Domain* yet, click on *Configuration* and select *Add a New Domain*.
+
+.. Enter a *Name* and *Enable* the Automate Domain.
+
+.. Click *Add*.
+
+. Select your *Automate Domain*.
+
+. (Optional) If you do not have a *Namespace* yet, click on *Configuration* and select *Add a New Namespace*.
+
+.. Enter a *Name*.
+
+.. Click *Add*.
+
+. Select your *Namespace*.
+
+. Click *Configuration* and select *Add a New Class*. 
+
+. Fill in the *Name* field.
+
+. Click *Add*.
+
+. Select your *Class*.
+
+. Click the *Schema* tab.
+
+. Click *Configuration* and select *Edit selected Schema*.
+
+. Click the plus sign next to *New Field*.
+
+. Enter "execute" as the *Name*.
+
+. From the *Type* list, select "Method".
+
+. From the *Data Type* list, select "String".
+
+. Click the V sign to save the new field.
+
+. Click *Save* to save the Schema changes.
+
+. Select the *Methods* tab.
+
+. Click *Configuration* and select *Add a New Method*.
+
+. From the *Type* list, select "inline".
+
+. Enter a *Name*.
+
+. In the Data field add the following code:
+
+    $evm.log(:info, "******** HANDLING NUAGE EVENT ********")
+    $evm.log(:info, "EVENT DATA: #{$evm.root['event_stream']['full_data']}")
+    $evm.log(:info, "**************************************")
+
+. Click *Add*.
+
+. Select the *Instances* tab.
+
+. Click *Configuration* and select *Add a New Instance*.
+
+. Enter a *Name*.
+
+. In the *(execute)* field, enter the *Name* of your Method in the *Value* field.
+
+. Click *Add*.
+
+==== Attaching the Automate Class to Nuage Networks VSP Events
+
+This part will make sure that the Automate Class created in the previous section is executed when an event comes in that does not have a specific assignment already.
+
+. Open the Domain, Namespace, Automate Class and Instance *ManageIQ (Locked) > System > Event > EmsEvent > Nuage > .missing*.
+
+. Click *Configuration* and select *Copy this Instance*.
+
+. From the *To Domain* list, select your Domain.
+
+. Check *Copy to same path*.
+
+. Click *Copy*. This will create a *.missing* instance in your Domain, in the *System > Event > EmsEvent > Nuage* Class.
+
+. Select your private *.missing* Instance in your Domain. 
+
+. Click *Configuration* and select *Edit this Instance*.
+
+. In the *(rel1) Value* field, enter the path to the *Automate Instance* you created in the previous section. For instance, if the Namespace you created is `Automation`, the Class you created is `LogInfo` and the Instance is `logging`, you would enter `/Automation/LogInfo/logging` in this field.
+
+. Click *Save*.
+
+==== Seeing the Automation in action
+
+To see the automation in action, follow these steps:
+
+. Go to *Automation > Automate > Log*.
+
+. In your Nuage Networks VSP environment, take an action, for instance: create or delete a redirection target. 
+
+. Click the refresh button.
+
+. In the log, you will see something similar as the following appear:
+
+    [----] I, [2018-03-07T03:40:45.609931 #24569:559eebc]  INFO -- : <AEMethod logmissing> ******** HANDLING NUAGE EVENT ********
+    [----] I, [2018-03-07T03:40:45.618829 #24569:559eebc]  INFO -- : <AEMethod logmissing> EVENT DATA: {"userName"=>"csproot", "enterpriseName"=>"csp", "type"=>"DELETE", "entityType"=>"redirectiontarget", "entityVersion"=>nil, "assoicatedEvent"=>false, "eventReceivedTime"=>1520390432802, "entities"=>[{"children"=>nil, "parentType"=>"domain", "entityScope"=>"ENTERPRISE", "lastUpdatedBy"=>"8a6f0e20-a4db-4878-ad84-9cc61756cd5e", "lastUpdatedDate"=>1520390262000, "creationDate"=>1520390262000, "virtualNetworkID"=>"8988894", "name"=>"Demo Redirection Target", "description"=>nil, "endPointType"=>"L3", "redundancyEnabled"=>false, "triggerType"=>"NONE", "destinationType"=>"REDIRECTION_TARGET", "owner"=>"8a6f0e20-a4db-4878-ad84-9cc61756cd5e", "ID"=>"29a4905d-5a5d-480d-b5f7-8db549814b1a", "parentID"=>"d6a213c7-6595-4dab-b7df-669c86ee53a5", "externalID"=>nil, "ESI"=>"0xFFFFFF00000000002710", "templateID"=>nil}], "diffMap"=>nil, "ignoreDiffInMediationEvents"=>false, "updateMechanism"=>"DEFAULT", "requestID"=>"f6440c04-ebf5-423f-a95c-b385ac1eb1d8", "sourceEnterpriseID"=>"4e68985d-54e8-46e7-b541-16b98193ea00"}
+    [----] I, [2018-03-07T03:40:45.620338 #24569:559eebc]  INFO -- : <AEMethod logmissing> **************************************
+
+*Note* You might need to wait a few seconds before doing the refresh.
 
