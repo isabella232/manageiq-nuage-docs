@@ -1,4 +1,20 @@
-=== Inspecting Nuage Networks VSP security groups
+=== Inspecting Nuage Networks VSP Security Groups
 
-#
+The Nuage Networks provider allows you to inspect the Nuage Networks VSP Security Groups that are present in your Nuage Networks VSD. There are two ways of achieving this and each is described below.
+
+==== Inspecting Nuage Networks VSP Security Groups through the Nuage Networks provider
+
+. Navigate to *Networks > Providers*.
+
+. Click on the Nuage Networks provider for which you want to inspect the Security Groups. This will bring you to the detailed information of the Nuage Networks provider.
+
+. In the Relationships panel, click on *Security Groups*. This will open the list of Security Groups related to the selected Nuage Networks provider.
+
+. To go in more detail, click the Security Group you want to inspect. This will take you to the detailed information of the Security Group.
+
+==== Inspecting Nuage Networks VSP Security Groups through the Security Group view
+
+. Navigate to *Networks > Security Groups*. You will be presented with a list of all the Security Groups across all Network Providers.
+
+. To go in more detail, click the Security Group you want to inspect. This will take you to the detailed information of the Security Group.
 

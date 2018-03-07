@@ -1,4 +1,8 @@
-=== Viewing the relationship between Nuage Networks VSP networks and OpenStack networks
+=== Viewing the relationship between Nuage Networks VSP subnets and OpenStack subnets
 
-#
+The Nuage Networks provider can also show the relationship between Nuage Networks VSP subnets and OpenStack subnets if the OpenStack environment is using the Nuage Networks VSP plugin.
+
+To view this relationship, open the *Networks > Topology* view. It will show a connection between the Nuage Networks VSP subnet and an OpenStack subnet as seen below.
+
+image:provider/images/nuage-osp.png[]
 

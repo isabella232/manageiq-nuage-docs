@@ -1,4 +1,20 @@
-=== Inspecting Nuage Networks VSP networks
+=== Inspecting Nuage Networks VSP subnets
 
-#
+The Nuage Networks provider allows you to inspect the Nuage Networks VSP subnets that are present in your Nuage Networks VSD. There are two ways of achieving this and each is described below.
+
+==== Inspecting Nuage Networks VSP subnets through the Nuage Networks provider
+
+. Navigate to *Networks > Providers*.
+
+. Click on the Nuage Networks provider for which you want to inspect the subnets. This will bring you to the detailed information of the Nuage Networks provider.
+
+. In the Relationships panel, click on *Cloud Subnets*. This will open the list of subnets related to the selected Nuage Networks provider.
+
+. To go in more detail, click the Cloud Subnet you want to inspect. This will take you to the detailed information of the Cloud Subnet.
+
+==== Inspecting Nuage Networks VSP subnets through the Cloud subnet view
+
+. Navigate to *Networks > Subnets*. You will be presented with a list of all the Cloud Subnets across all Network Providers.
+
+. To go in more detail, click the Cloud Subnet you want to inspect. This will take you to the detailed information of the Cloud Subnet.
 
