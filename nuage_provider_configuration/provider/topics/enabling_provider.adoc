@@ -1,0 +1,30 @@
+=== Enabling support for the Nuage Networks provider
+
+In the current release of CloudForms, the Nuage Networks provider requires extra permissions to be enabled on the CloudForms application to be available. The following steps can be followed to enable the Nuage Networks provider.
+
+. Open a console on the CloudForms Appliance VM or SSH to the CloudForms Appliance. 
+
+. Log in using the root user. The default password is `smartvm`.
+
+. Edit the `/var/www/miq/vmdb/config/permissions.yml` file, this can be done using `vim` or `nano`.
+
+. Add the bottom of the file, add a line stating `- ems-type:nuage_network`.
+
+. Save the file.
+
+. Run `appliance_console`.
+
+. Press Enter to continue.
+
+. Select option `15) Stop EVM Server Processes`
+
+. Confirm you want to stop the services. Wait for the services to stop. Once they are stopped, press Enter twice to return to the menu.
+
+. Select option `16) Start EVM Server Processes`
+
+. Confirm you want to start the services. Wait for the services to start. Once they are started, press Enter twice to return to the menu.
+
+. Select option `20) Quit` and log out of the CloudForms Appliance.
+
+This will enable the use of the Nuage Networks provider. After starting the service, you might need to wait a few minutes before you can log in to the CloudForms application.
+

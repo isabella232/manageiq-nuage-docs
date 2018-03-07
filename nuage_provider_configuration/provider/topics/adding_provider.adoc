@@ -1,4 +1,68 @@
 === Adding a Nuage Networks provider
 
-#
+You can add a Nuage Networks provider using the following steps. 
+
+*Note:* You must be logged in to CloudForms as a user with permission to add providers.
+
+==== Configuring the basic Nuage Networks provider settings
+
+. Navigate to *Networks > Providers*.
+
+. Click *Configuration*.
+
+. Select *Add a New Network Provider*.
+
+. Enter a *Name* for the Network Provider, for instance "Nuage Networks VSP".
+
+. From the *Type* list, select "Nuage Network Manager".
+
+. From the *API Version* list, select the appropriate version for your Nuage Networks VSP environment. 
+
+*Note* If you want to use the Events feature, you will need to have a Nuage Networks VSP environment of version 5.1.1 or newer.
+
+==== Configuring endpoints
+
+It is a requirement to configure the Nuage Networks VSD endpoint with which the provider can communicate. This is done through the *Endpoints* tab in the form when configuring the Nuage Networks provider. The following steps go in more detail.
+
+. From the *Secuity Protocol* list, select the "SSL without validation" option.
+
+. In the *Hostname (or IPv4 or IPv6 address)* field, enter the IP or hostname of your Standalone Nuage Networks VSD, or the load-balancer IP or hostname that sits in front of the Nuage Networks VSD nodes in a clustered deployment.
+
+. In the *API Port* field, enter the API port to use. The default port on the Nuage Networks VSD for API is *8443*.
+
+. In the *Username* field, enter the API username you want to use, this should be a user in the Nuage Networks VSD global environment, not an Enterprise specific user.
+
+. In the *Password* field, enter the API password for the user that you want to use.
+
+. Click *Validate* to validate your input.
+
+A message stating "Credential validation was successful" should appear on the top of the page. If an error is presented, please check the inputs of the different fields and validate again.
+
+==== Configuring events
+
+By default the Events and Alarms feature is disabled when adding a new Nuage Networks provider. To enable it, follow these steps, using ty *Events* tab in the form when configuring the Nuage Networks provider.
+
+. Select *AMQP* on the Events tab.
+
+. From the *Security Protocol* select Non-SSL.
+
+. In the *Hostname (or IPv4 or IPv6 address)* field, enter the IP or hostname of your Standalone Nuage Networks VSD, or if a Nuage Networks VSD Cluster is deployed, enter the IP or hostname of the first node of the Nuage Networks VSD Cluster.
+
+. (Optional) In the *Fallback Hostname 1* field, enter the IP or hostname of the second node of the Nuage Networks VSD Cluster.
+
+. (Optional) In the *Fallback Hostname 2* field, enter the IP or hostname of the third node of the Nuage Networks VSD Cluster.
+
+. In the *API Port* field, enter the port that the AMQP service uses on the Nuage Networks VSD node(s). The default value is *5672*.
+
+. In the *Username* field, enter the AMQP username you want to use, this should be a user in the Nuage Networks VSD global environment, not an Enterprise specific user. It is important that the username is in the format of `<username>@csp`, for example: `jmsclient@csp`. 
+
+. In the *Password* field, enter the AMQP password for the user that you want to use.
+
+. Click *Validate* to validate your input.
+
+A message stating "Credential validation was successful" should appear on the top of the page. If an error is presented, please check the inputs of the different fields and validate again.
+
+==== Adding the provider
+
+After following the appropriate steps above, you can click the *Add* button to add the Nuage Networks provider.
 

@@ -1,4 +1,16 @@
 === Changing a Nuage Networks provider
 
-#
+To change the configuration of a Nuage Networks provider, you can follow these steps.
+
+. Navigate to *Networks > Providers*.
+
+. Select the appropriate Nuage Networks provider.
+
+. Click *Configuration*, then click *Edit selected Network Provider*.
+
+. Change the fields according to the required changes.
+
+. Click *Validate* in case of new credentials.
+
+. Click *Save* to save the changes.
 

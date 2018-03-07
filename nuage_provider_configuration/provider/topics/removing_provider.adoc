@@ -1,4 +1,12 @@
 === Removing a Nuage Networks provider
 
-#
+If you want to delete the Nuage Networks provider, follow these steps:
+
+. Navigate to *Networks > Providers*.
+
+. Select the appropriate Nuage Networks provider.
+
+. Click *Configuration*, then click *Remove Network Providers from Inventory*.
+
+. Confirm that the Nuage Network provider needs to be removed by clicking *OK*.
 
