@@ -1,4 +1,12 @@
 == Troubleshooting the Nuage Networks provider
 
-#
+To troubleshoot the Nuage Networks provider, the following items should be verified:
+
+* Is the configuration of the Nuage Networks provider valid.
+
+* Are all credentials valid.
+
+* Make sure that the user that is being used, is part of the CSP Root group in the Nuage Networks VSD.
+
+* Check the `/var/www/miq/vmdb/log/evm.log` log file for mentions of `Nuage` and see if errors are shown.
 
