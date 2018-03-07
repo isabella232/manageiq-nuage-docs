@@ -1,3 +1,6 @@
 === Configuring the Nuage Networks VSP environment
 
-#
+Please follow the Nuage Networks VSP Installation and User guides to install the Nuage Networks components and configure them with the networks, policies and features you want to use. 
+
+It is advised to create at least one user on the global level in the Nuage Networks VSP environment. This user can be used to configure the Nuage Networks CloudForms provider and facilitate the connection between CloudForms and the Nuage Networks VSP environment.
+
