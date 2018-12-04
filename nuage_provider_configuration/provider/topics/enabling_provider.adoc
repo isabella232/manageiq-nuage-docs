@@ -16,15 +16,15 @@ In the current release of CloudForms, the Nuage Networks provider requires extra
 
 . Press Enter to continue.
 
-. Select option `15) Stop EVM Server Processes`
+. Select option `16) Stop EVM Server Processes`
 
 . Confirm you want to stop the services. Wait for the services to stop. Once they are stopped, press Enter twice to return to the menu.
 
-. Select option `16) Start EVM Server Processes`
+. Select option `17) Start EVM Server Processes`
 
 . Confirm you want to start the services. Wait for the services to start. Once they are started, press Enter twice to return to the menu.
 
-. Select option `20) Quit` and log out of the CloudForms Appliance.
+. Select option `21) Quit` and log out of the CloudForms Appliance.
 
 This will enable the use of the Nuage Networks provider. After starting the service, you might need to wait a few minutes before you can log in to the CloudForms application.
 
