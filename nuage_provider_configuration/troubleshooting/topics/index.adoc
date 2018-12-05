@@ -10,3 +10,5 @@ To troubleshoot the Nuage Networks provider, the following items should be verif
 
 * Check the `/var/www/miq/vmdb/log/evm.log` log file for mentions of `Nuage` and see if errors are shown.
 
+* Check the `/var/www/miq/vmdb/log/nuage.log` log file for more details on the activities of the Nuage Networks Provider.
+
