@@ -6,8 +6,12 @@ Key features include:
 
 * Monitoring of all events and alarms from the Nuage VSP environment.
 * Leveraging events and alarms for automation and reporting.
+* Visibility in the Nuage VSP tenants.
 * Visibility in the Nuage VSP overlay networks.
-* Visibility in the Nuage VSP security groups. 
-* Display the relationship between Nuage VSP overlay networks and OpenStack networks.
+* Visibility in the Nuage VSP security groups.
+* Visibility in the Nuage VSP ports.
+* Visibility in the relationships between the different Nuage entities.
+* Display the above relationships.
+* Display the relationship between Nuage VSP ports and Virtual Machines in the other providers.
 * Automatic targeted refresh of entities on events.
 
