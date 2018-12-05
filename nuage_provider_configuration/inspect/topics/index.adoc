@@ -6,6 +6,8 @@ include::view_network_routers.adoc[]
 
 include::view_networks.adoc[]
 
+include::view_floating_ips.adoc[]
+
 include::view_security_groups.adoc[]
 
 include::view_openstack_relation.adoc[]
