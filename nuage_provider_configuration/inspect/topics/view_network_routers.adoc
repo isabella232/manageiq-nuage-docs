@@ -1,0 +1,20 @@
+=== Inspecting Nuage Networks VSP domains
+
+The Nuage Networks provider allows you to inspect the Nuage Networks VSP domains that are present in your Nuage Networks VSD. There are two ways of achieving this and each is described below.
+
+==== Inspecting Nuage Networks VSP domains through the Nuage Networks provider
+
+. Navigate to *Networks > Providers*.
+
+. Click on the Nuage Networks provider for which you want to inspect the domains. This will bring you to the detailed information of the Nuage Networks provider.
+
+. In the Relationships panel, click on *Network Routers*. This will open the list of domains related to the selected Nuage Networks provider.
+
+. To go in more detail, click the Network Router you want to inspect. This will take you to the detailed information of the Network Router.
+
+==== Inspecting Nuage Networks VSP domains through the Network Router view
+
+. Navigate to *Networks > Network Routers*. You will be presented with a list of all the Network Routers across all Network Providers.
+
+. To go in more detail, click the Network Router you want to inspect. This will take you to the detailed information of the Network Router.
+
