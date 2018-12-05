@@ -2,5 +2,7 @@
 
 include::nuage_relationships.adoc[]
 
+include::provider_relationships.adoc[]
+
 include::view_openstack_relation.adoc[]
 

@@ -1,0 +1,16 @@
+=== Nuage Networks Provider relationships with other Providers
+
+The Nuage Networks Provider will automatically try to identify other Cloud Providers to build relationships between entities within the Nuage Networks Provider and the other Cloud Providers. 
+
+==== Current supported relationships
+
+* VMware vCenter Provider: The Nuage Networks Provider will build a relationship between the *Network Ports* inside the Provider with the Virtual Machines in the VMware vCenter Provider.
+
+* OpenStack Provider: The Nuage Networks Provider will build a relationship between the *Cloud Subnets* inside the Provider with the Networks in the OpenStack Provider.
+
+==== Future relationships
+
+* OpenStack Provider: Virtual Machine in OpenStack to *Network Ports* inside the Nuage Networks Provider.
+
+* OpenShift Container Platform Provider: Pods in OpenShift to *Network Ports* inside the Nuage Networks Provider.
+
