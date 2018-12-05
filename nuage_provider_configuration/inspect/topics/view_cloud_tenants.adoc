@@ -1,0 +1,20 @@
+=== Inspecting Nuage Networks VSP enterprises
+
+The Nuage Networks provider allows you to inspect the Nuage Networks VSP enterprises that are present in your Nuage Networks VSD. There are two ways of achieving this and each is described below.
+
+==== Inspecting Nuage Networks VSP enterprises through the Nuage Networks provider
+
+. Navigate to *Networks > Providers*.
+
+. Click on the Nuage Networks provider for which you want to inspect the enterprises. This will bring you to the detailed information of the Nuage Networks provider.
+
+. In the Relationships panel, click on *Cloud Tenants*. This will open the list of enterprises related to the selected Nuage Networks provider.
+
+. To go in more detail, click the Cloud Tenant you want to inspect. This will take you to the detailed information of the Cloud Tenant.
+
+==== Inspecting Nuage Networks VSP enterprises through the Cloud tenant view
+
+. Navigate to *Compute > Clouds > Tenants*. You will be presented with a list of all the Cloud Tenants across all Network and Cloud Providers.
+
+. To go in more detail, click the Cloud Tenant you want to inspect. This will take you to the detailed information of the Cloud Tenant.
+

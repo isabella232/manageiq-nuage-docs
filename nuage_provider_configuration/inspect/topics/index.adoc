@@ -1,5 +1,7 @@
 == Using the Nuage Networks provider to inspect elements
 
+include::view_cloud_tenants.adoc[]
+
 include::view_networks.adoc[]
 
 include::view_security_groups.adoc[]
