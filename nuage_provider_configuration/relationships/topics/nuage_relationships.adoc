@@ -1,0 +1,9 @@
+=== Relationships between entities in the Nuage Networks provider
+
+The different entities in Nuage Networks VSP have relationships between each other. For instance an Enterprise will have multiple Domains, and a Domain will have several Subnets. These relationships are also present in Red Hat CloudForms. Below is a view on the relationships between different entities in Nuage Networks VSP and their counterparts in Red Hat CloudForms.
+
+.Nuage Networks VSP relationships and their Red Hat CloudForms counterparts.
+image::relationships/images/nuage-relationships.png[]
+
+When viewing any of the enities in the Nuage Networks Provider, each of these relationships will be visible.
+

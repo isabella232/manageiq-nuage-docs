@@ -11,6 +11,8 @@ include::configuration/topics/index.adoc[]
 
 include::provider/topics/index.adoc[]
 
+include::relationships/topics/index.adoc[]
+
 include::inspect/topics/index.adoc[]
 
 include::automation/topics/index.adoc[]
