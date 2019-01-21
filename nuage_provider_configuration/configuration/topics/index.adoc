@@ -1,6 +1,6 @@
-== Configuring Nuage Networks VSP for Red Hat CloudForms integration
+== Configuring Nuage Networks VSP for {product-title} integration
 
-The Nuage Networks Provider for Red Hat CloudForms is a Network provider which can be used to monitor one or more Nuage Networks VSP deployments. For more details on how to deploy and install a Nuage Networks VSP deployment, please contact your Nokia or Nuage Networks representative.
+The Nuage Networks Provider for {product-title} is a Network provider which can be used to monitor one or more Nuage Networks VSP deployments. For more details on how to deploy and install a Nuage Networks VSP deployment, please contact your Nokia or Nuage Networks representative.
 
 include::requirements.adoc[]
 

@@ -2,7 +2,7 @@
 
 You can add a Nuage Networks provider using the following steps. 
 
-*Note:* You must be logged in to CloudForms as a user with permission to add providers.
+*Note:* You must be logged in to {product-title} as a user with permission to add providers.
 
 ==== Configuring the basic Nuage Networks provider settings
 

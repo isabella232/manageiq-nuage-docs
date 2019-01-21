@@ -1,6 +1,6 @@
 == Overview
 
-The Nuage Networks Provider for Red Hat CloudForms provides IT and Network administrators the capabilities to integrate a Nuage Networks VSP environment into Red Hat CloudForms. Nuage Networks VSP provides a software-defined networking (SDN) solution which delivers policy-based automation across the network. Its components can be used to optimize datacenter, cloud and software-defined WAN operations, and to automate security policies and remediation. For more information on Nuage Networks VSP, please visit http://nuagenetworks.net[the Nuage Networks website].
+The Nuage Networks Provider for {product-title} provides IT and Network administrators the capabilities to integrate a Nuage Networks VSP environment into {product-title}. Nuage Networks VSP provides a software-defined networking (SDN) solution which delivers policy-based automation across the network. Its components can be used to optimize datacenter, cloud and software-defined WAN operations, and to automate security policies and remediation. For more information on Nuage Networks VSP, please visit http://nuagenetworks.net[the Nuage Networks website].
 
 Key features include:
 

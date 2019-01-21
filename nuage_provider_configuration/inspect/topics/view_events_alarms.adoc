@@ -1,6 +1,6 @@
 === Inspecting Nuage Networks VSP events and alarms
 
-The Nuage Networks VSP Events and Alarms will be created as an `EmsEvent` in CloudForms. To view these events, you can go to *Automation > Automate > Log*
+The Nuage Networks VSP Events and Alarms will be created as an `EmsEvent` in {product-title}. To view these events, you can go to *Automation > Automate > Log*
 
-This will show you the log of all the events that CloudForms is receiving and potentially which automated workflow it is executing. This provides some basic information about the events and alarms, in the next chapter, we will demonstrate how to create a generic automation workflow to log all events. 
+This will show you the log of all the events that {product-title} is receiving and potentially which automated workflow it is executing. This provides some basic information about the events and alarms, in the next chapter, we will demonstrate how to create a generic automation workflow to log all events. 
 

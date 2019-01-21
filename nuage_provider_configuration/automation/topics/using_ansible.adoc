@@ -1,36 +1,36 @@
 === Using Embedded Ansible to run Automation tasks
 
-Red Hat CloudForms comes with the https://docs.ansible.com/ansible/latest/modules/nuage_vspk_module.html[Nuage Ansible module] which can be used to manage any Nuage Networks VSP environment and supports all features and Nuage Networks VSP API capabilities.
+{product-title} comes with the https://docs.ansible.com/ansible/latest/modules/nuage_vspk_module.html[Nuage Ansible module] which can be used to manage any Nuage Networks VSP environment and supports all features and Nuage Networks VSP API capabilities.
 
-This Nuage Ansible module can be used from within the CloudForms Automation framework. This chapter will go in more detail of how to set this up and demonstrate this automation.
+This Nuage Ansible module can be used from within the {product-title} Automation framework. This chapter will go in more detail of how to set this up and demonstrate this automation.
 
 ==== Enabling Embedded Ansible
 
-Before you can use the Nuage Ansible module and the Ansible Automation inside Red Hat CloudForms, you need to enable the Embedded Ansible functionality. To do this, follow these steps:
+Before you can use the Nuage Ansible module and the Ansible Automation inside {product-title}, you need to enable the Embedded Ansible functionality. To do this, follow these steps:
 
-1. Log in as an Administrator in Red Hat CloudForms.
+1. Log in as an Administrator in {product-title}.
 
-2. Open the CloudForms configuration.
+2. Open the {product-title} configuration.
 
-3. Select a CloudForms server.
+3. Select a {product-title} server.
 
 4. In the *Server Control > Server Roles* make sure the *Embedded Ansible* switch is toggled to *On*.
 
 5. Click the *Save* button.
 
-More details can be found in the CloudForms documentation in the *Introduction to Embedded Ansible* chapter.
+More details can be found in the {product-title} documentation in the *Introduction to Embedded Ansible* chapter.
 
 ==== Create a Git Ansible playbook repository
 
 Once you have enabled Embedded Ansible, the next step is to setup a Git Ansible playbook repository that will contain the playbooks you want to use in your automation tasks. 
 
-Use your preferred Git environment to setup a repository and make sure that repository is reachable by the CloudForms appliance so it can clone the repository locally.
+Use your preferred Git environment to setup a repository and make sure that repository is reachable by the {product-title} appliance so it can clone the repository locally.
 
 ==== Create an Ansible playbook
 
 Inside the Git repository, you will need to have one or more Ansible playbooks. These playbooks contain tasks that need to be executed in order when they are called. 
 
-A very simple playbook that is designed to automatically be executed by the CloudForms Automation framework when a certain Nuage event comes in, could be:
+A very simple playbook that is designed to automatically be executed by the {product-title} Automation framework when a certain Nuage event comes in, could be:
 
 .printout.yaml
 [source,yaml]
@@ -57,7 +57,7 @@ A very simple playbook that is designed to automatically be executed by the Clou
 
 This playbook will capture the event and print out some information about the event in the automation log file. 
 
-The important part to note in this playbook is that it includes a role called `xlab_si.nuage_miq_automate`. This role is provided by Nuage Networks to support the Ansible integration. It's purpose is to get the necessary information from CloudForms and provide it as Ansible facts to the other tasks in the playbook.
+The important part to note in this playbook is that it includes a role called `xlab_si.nuage_miq_automate`. This role is provided by Nuage Networks to support the Ansible integration. It's purpose is to get the necessary information from {product-title} and provide it as Ansible facts to the other tasks in the playbook.
 
 A more advanced playbook, using the Nuage Ansible module, looks like:
 
@@ -96,11 +96,11 @@ In this playbook, the Nuage VSPK Ansible module is used to fetch the data from t
 
 More examples, and details on the `xlab_si.nuage_miq_automate` role, can be found in our https://github.com/nuagenetworks/manageiq-ansible-playbooks[Example GitHub repository].
 
-==== Adding a Ansible playbook repository to Red Hat CloudForms
+==== Adding a Ansible playbook repository to {product-title}
 
-After enabling the Embedded Ansible functionality and creating your playbooks, the next step is to add the Ansible playbook repository to CloudForms. This can be done following these steps:
+After enabling the Embedded Ansible functionality and creating your playbooks, the next step is to add the Ansible playbook repository to {product-title}. This can be done following these steps:
 
-1. In CloudForms, open *Automation > Ansible > Repositories*.
+1. In {product-title}, open *Automation > Ansible > Repositories*.
 
 2. Click *Configuration > Add New Repository*.
 
@@ -108,11 +108,11 @@ After enabling the Embedded Ansible functionality and creating your playbooks, t
 
 4. Click *Add*.
 
-This will make the CloudForms appliance clone the repository locally. Once that has been completed, you can check the *Automation > Ansible > Playbooks* page to see your playbooks showing up.
+This will make the {product-title} appliance clone the repository locally. Once that has been completed, you can check the *Automation > Ansible > Playbooks* page to see your playbooks showing up.
 
 ==== Setting up the automation
 
-Now that we have the playbooks available in CloudForms, you can use them in your Automation.
+Now that we have the playbooks available in {product-title}, you can use them in your Automation.
 
 First, you will need to create an Automate domain:
 
@@ -162,7 +162,7 @@ Setup the playbook that needs to be executed:
 
 . Select the *Machine Credentials* as *CFME Default Credential*.
 
-. If your CloudForms server and/or the Nuage VSD is using self-signed certificates or untrusted certificates, add an *Input Parameter* called *manageiq_validate_certs* with a default value *False*.
+. If your {product-title} server and/or the Nuage VSD is using self-signed certificates or untrusted certificates, add an *Input Parameter* called *manageiq_validate_certs* with a default value *False*.
 
 . Click *Add*.
 

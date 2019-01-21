@@ -12,5 +12,5 @@ It is possible to create a new subnet on a Nuage VSP domain using the Nuage Netw
 
 5. Click *Add*. 
 
-This will start a task in Red Hat CloudForms that will create a new Cloud Subnet inside the Nuage VSP domain. In the Nuage VSD Architect, you can see that a zone will be created called *CloudForms Subnets* and a new subnet is added in this zone.
+This will start a task in {product-title} that will create a new Cloud Subnet inside the Nuage VSP domain. In the Nuage VSD Architect, you can see that a zone will be created called *{product-title} Subnets* and a new subnet is added in this zone.
 

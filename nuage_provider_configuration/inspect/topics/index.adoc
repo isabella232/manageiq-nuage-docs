@@ -12,7 +12,5 @@ include::view_floating_ips.adoc[]
 
 include::view_security_groups.adoc[]
 
-include::view_openstack_relation.adoc[]
-
 include::view_events_alarms.adoc[]
  
