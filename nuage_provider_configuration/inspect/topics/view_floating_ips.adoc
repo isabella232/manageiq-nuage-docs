@@ -1,0 +1,20 @@
+=== Inspecting Nuage Networks VSP floating ips
+
+The Nuage Networks provider allows you to inspect the Nuage Networks VSP floating ips that are present in your Nuage Networks VSD. There are two ways of achieving this and each is described below.
+
+==== Inspecting Nuage Networks VSP floating ips through the Nuage Networks provider
+
+. Navigate to *Networks > Providers*.
+
+. Click on the Nuage Networks provider for which you want to inspect the floating ips. This will bring you to the detailed information of the Nuage Networks provider.
+
+. In the Relationships panel, click on *Floating IPs*. This will open the list of floating ips related to the selected Nuage Networks provider.
+
+. To go in more detail, click the Floating IP you want to inspect. This will take you to the detailed information of the Floating IP.
+
+==== Inspecting Nuage Networks VSP floating ips through the Floating IP view
+
+. Navigate to *Networks > Floating IPs*. You will be presented with a list of all the Floating IPs across all Network Providers.
+
+. To go in more detail, click the Floating IP you want to inspect. This will take you to the detailed information of the Floating IP.
+

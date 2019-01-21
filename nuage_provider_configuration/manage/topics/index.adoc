@@ -1,0 +1,4 @@
+== Managing Nuage Networks entities
+
+include::create_subnet.adoc[]
+

@@ -2,7 +2,7 @@
 
 You can add a Nuage Networks provider using the following steps. 
 
-*Note:* You must be logged in to CloudForms as a user with permission to add providers.
+*Note:* You must be logged in to {product-title} as a user with permission to add providers.
 
 ==== Configuring the basic Nuage Networks provider settings
 
@@ -24,7 +24,7 @@ You can add a Nuage Networks provider using the following steps.
 
 It is a requirement to configure the Nuage Networks VSD endpoint with which the provider can communicate. This is done through the *Endpoints* tab in the form when configuring the Nuage Networks provider. The following steps go in more detail.
 
-. From the *Secuity Protocol* list, select the "SSL without validation" option.
+. From the *Security Protocol* list, select the "SSL without validation" option.
 
 . In the *Hostname (or IPv4 or IPv6 address)* field, enter the IP or hostname of your Standalone Nuage Networks VSD, or the load-balancer IP or hostname that sits in front of the Nuage Networks VSD nodes in a clustered deployment.
 
@@ -40,7 +40,7 @@ A message stating "Credential validation was successful" should appear on the to
 
 ==== Configuring events
 
-By default the Events and Alarms feature is disabled when adding a new Nuage Networks provider. To enable it, follow these steps, using ty *Events* tab in the form when configuring the Nuage Networks provider.
+By default the Events and Alarms feature is disabled when adding a new Nuage Networks provider. To enable it, follow these steps, using the *Events* tab in the form when configuring the Nuage Networks provider.
 
 . Select *AMQP* on the Events tab.
 

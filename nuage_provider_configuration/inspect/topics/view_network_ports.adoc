@@ -1,0 +1,20 @@
+=== Inspecting Nuage Networks VSP vports
+
+The Nuage Networks provider allows you to inspect the Nuage Networks VSP vports that are present in your Nuage Networks VSD. There are two ways of achieving this and each is described below.
+
+==== Inspecting Nuage Networks VSP vports through the Nuage Networks provider
+
+. Navigate to *Networks > Providers*.
+
+. Click on the Nuage Networks provider for which you want to inspect the vports. This will bring you to the detailed information of the Nuage Networks provider.
+
+. In the Relationships panel, click on *Network Ports*. This will open the list of vports related to the selected Nuage Networks provider.
+
+. To go in more detail, click the Network Port you want to inspect. This will take you to the detailed information of the Network Port.
+
+==== Inspecting Nuage Networks VSP vports through the Network Port view
+
+. Navigate to *Networks > Network Ports*. You will be presented with a list of all the Network Ports across all Network Providers.
+
+. To go in more detail, click the Network Port you want to inspect. This will take you to the detailed information of the Network Port.
+

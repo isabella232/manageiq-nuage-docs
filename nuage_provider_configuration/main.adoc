@@ -1,8 +1,26 @@
 :numbered:
 
-= Configuring the Nuage Networks Provider for Red Hat CloudForms
+//
+// Uncomment following lines when compiling locally. In production, those values are filled from
+// caller, see https://github.com/ManageIQ/manageiq_docs/tree/master/common/attributes.
+//
+
+:product-title: ManageIQ
+//:product-title_short: ManageIQ
+//:product-title_short_l: mangeiq
+//:product-title_abbr: miq
+//:product-title_abbr_uc: MIQ
+
+//:product-title: Red Hat CloudForms
+//:product-title_short: CloudForms
+//:product-title_short_l: cloudforms
+//:product-title_abbr: cfme
+//:product-title_abbr_uc: CFME
+
+
+= Configuring the Nuage Networks Provider for {product-title}
 Nuage Networks <info@nuagenetworks.net>
-version 0.0, {localdate}
+{localdate}
 :toc:
 
 include::overview/topics/index.adoc[]
@@ -11,7 +29,11 @@ include::configuration/topics/index.adoc[]
 
 include::provider/topics/index.adoc[]
 
+include::relationships/topics/index.adoc[]
+
 include::inspect/topics/index.adoc[]
+
+include::manage/topics/index.adoc[]
 
 include::automation/topics/index.adoc[]
 

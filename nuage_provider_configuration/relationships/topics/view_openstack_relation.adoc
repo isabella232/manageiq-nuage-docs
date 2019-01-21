@@ -4,5 +4,5 @@ The Nuage Networks provider can also show the relationship between Nuage Network
 
 To view this relationship, open the *Networks > Topology* view. It will show a connection between the Nuage Networks VSP subnet and an OpenStack subnet as seen below.
 
-image:provider/images/nuage-osp.png[]
+image:relationships/images/nuage-osp.png[]
 

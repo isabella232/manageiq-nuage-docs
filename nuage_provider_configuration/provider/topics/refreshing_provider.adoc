@@ -1,6 +1,6 @@
 === Refreshing a Nuage Networks provider
 
-The Nuage Networks provider supports targetted refresh of the supported entities when the Events and Alarms feature is enabled. This will update the information for Subnets and Security Groups whenever the entity in the Nuage Networks VSD is changed. 
+The Nuage Networks provider supports targeted refresh of the supported entities when the Events and Alarms feature is enabled. This will update the information for Subnets and Security Groups whenever the entity in the Nuage Networks VSD is changed. 
 
 Manual refresh is also supported, to achieve this, follow these steps:
 

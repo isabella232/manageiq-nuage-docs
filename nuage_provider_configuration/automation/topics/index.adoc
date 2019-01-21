@@ -2,3 +2,5 @@
 
 include::creating_automation_task.adoc[]
 
+include::using_ansible.adoc[]
+
