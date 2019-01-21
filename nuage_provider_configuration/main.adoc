@@ -5,7 +5,7 @@
 // caller, see https://github.com/ManageIQ/manageiq_docs/tree/master/common/attributes.
 //
 
-//:product-title: ManageIQ
+:product-title: ManageIQ
 //:product-title_short: ManageIQ
 //:product-title_short_l: mangeiq
 //:product-title_abbr: miq
@@ -20,7 +20,7 @@
 
 = Configuring the Nuage Networks Provider for {product-title}
 Nuage Networks <info@nuagenetworks.net>
-version 0.0, {localdate}
+{localdate}
 :toc:
 
 include::overview/topics/index.adoc[]
