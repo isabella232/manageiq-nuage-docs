@@ -1,6 +1,6 @@
 === Creating a Cloud Subnet on a Nuage VSP domain
 
-It is possible to create a new subnet on a Nuage VSP domain using the Nuage Networks Provider. This can be done following these setps:
+It is possible to create a new subnet on a Nuage VSP domain using the Nuage Networks Provider. This can be done following these steps:
 
 1. Select the *Network Router* (Nuage VSP domain) to which you want to add a new Cloud Subnet (Nuage VSP subnet).
 

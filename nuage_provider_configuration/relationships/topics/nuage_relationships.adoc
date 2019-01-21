@@ -5,5 +5,5 @@ The different entities in Nuage Networks VSP have relationships between each oth
 .Nuage Networks VSP relationships and their Red Hat CloudForms counterparts.
 image::relationships/images/nuage-relationships.png[]
 
-When viewing any of the enities in the Nuage Networks Provider, each of these relationships will be visible.
+When viewing any of the entities in the Nuage Networks Provider, each of these relationships will be visible.
 
